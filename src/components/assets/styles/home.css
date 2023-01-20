@@ -1,0 +1,13 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
