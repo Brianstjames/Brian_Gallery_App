@@ -8,9 +8,6 @@ export default function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
-
-    const navigate = useNavigate();
-
     // allows rendering and refreshing of the component
     useEffect(() =>{
         console.log('useEffect Ran')

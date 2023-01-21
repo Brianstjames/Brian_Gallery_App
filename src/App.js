@@ -11,9 +11,8 @@ import {
   Routes,
   Route,
   Navigate,
-  json,
-} from 'react-router-dom';
-import { render } from "@testing-library/react";
+  }
+   from 'react-router-dom';
 import ImagesPage from "./components/sub-components/ImagesPage";
 import FavoritesPage from "./components/sub-components/FavoritesPage";
 

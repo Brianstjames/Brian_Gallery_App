@@ -6,8 +6,6 @@ export default function SignUpForm() {
   const [password, setPassword] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const navigate = useNavigate();
-
   useEffect(() => {
     console.log("useEffect Ran");
     if (isSubmitted) {

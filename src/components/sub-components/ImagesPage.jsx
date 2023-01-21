@@ -7,8 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 export default function ImagesPage() {
   const dispatch = useDispatch();
   const count = useSelector((state) => state.count);
-  const [image, setImage] = useState("");
-  const [about, setAbout] = useState("");
   const [allImages, setAllImages] = useState([]);
 
  /**
