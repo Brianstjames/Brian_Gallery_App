@@ -1,12 +1,62 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Brian's Gallery App
 
 ## Available Scripts
+This application is designed to allow users to search for different images of kites. The user will sign-in/sign-up then be routed to the images page where they can choose their favorite image out of a set. The image chosen will then be considered their favorite and can be found on the user's favorites page.
 
 In the project directory, you can run:
 
 ### `npm start`
+## Tech Stack
+React 
+Redux
+CSS
+Bootstrap
+shutterstock-api
+
+## Stretch Goals
+Get image page to display sets of kites with one click of button
+Get favorites page to done
+
+##Author
+Brian Ayiteyfio
+
+##Github link
+https://github.com/Brianstjames/Brian_Gallery_App.git
+
+## Code Examples
+This is the reudcer which sets up the state because the action.type that was chosen is the increment count. Then we want to use a spread operator (...) to be able to change the state. We are taking the initial count(which is 0 and we set it to that on line 5) and adding to it whatever number we pass into our incrementCount function.
+
+const reducer = (state,action) => {
+     if(state === undefined){
+        state = {
+            count: 0
+        }
+    }
+
+    switch(action.type){
+        case "INCREMENT":
+            return{
+                ...state,           
+                count: state.count + action.data    
+            }
+        case "DECREMENT":
+            return{
+                ...state,
+                count: state.count - action.data 
+            }
+        default:
+            return state
+    }
+}
+
+export default reducer
+
+
+
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
